@@ -8,6 +8,7 @@ router.get('/', authenticate, transactionController.getTransactions);
 router.get('/dashboard', authenticate, transactionController.getDashboard);
 router.put('/:id', authenticate, transactionController.updateTransaction);
 router.delete('/:id', authenticate, transactionController.deleteTransaction);
-router.get('/filter', authenticate, transactionController.filterByDate);
 
 module.exports = router;
+
+
